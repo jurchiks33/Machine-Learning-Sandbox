@@ -1,10 +1,10 @@
-# import numpy as np
-# from sklearn.datasets import load_digits
-# import matplotlib.pyplot as plt
-# from sklearn.decomposition import PCA 
-# from sklearn.preprocessing import scale
-# from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
-# import matplotlib.cm as cm
+import numpy as np
+from sklearn.datasets import load_digits
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA 
+from sklearn.preprocessing import scale
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
+import matplotlib.cm as cm
 
 # digits = load_digits()
 # data = digits.data
@@ -56,3 +56,12 @@ import matplotlib.pyplot as plt
 
 np.random.seed()
 
+
+digits = load_digits()
+data = scale(digits.data)
+label = digits.target
+
+sample_size = 300
+
+print("n_digits: %d, \t n_samples %d, \t n_features %d"
+      % (n_digits, n_samples, n_features))
