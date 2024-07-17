@@ -6,12 +6,12 @@ from sklearn.preprocessing import scale
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 import matplotlib.cm as cm
 
-# digits = load_digits()
-# data = digits.data
+digits = load_digits()
+data = digits.data
 
-# n_samples, n_features = data.shape
-# n_digits = len(np.unique(digits.target))
-# labels = digits.target
+n_samples, n_features = data.shape
+n_digits = len(np.unique(digits.target))
+labels = digits.target
 
 
 # pca = PCA(n_components=10)
